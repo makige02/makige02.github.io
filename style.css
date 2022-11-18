@@ -567,7 +567,6 @@ body {
   display: block;
   max-width: 100%;
   height: 45px;
-  transform: translateY(6px);
 }
 
 .appinfo {
@@ -577,11 +576,17 @@ body {
   clear: left;
 }
 .app-android-link img {
-  display: block;
-  height: 57px;
+    display: block;
+  max-width: 150px;
+  margin: auto;
 }
 
 /* End Works */
+
+/*　個別投稿ページ */
+.postpage{
+    padding: 0 10px;
+}
 
 @media only screen and (max-width: 767px) {
   .pc_only {
