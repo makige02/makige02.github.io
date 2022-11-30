@@ -566,7 +566,7 @@ body {
 .app-itune-link img {
   display: block;
   max-width: 100%;
-  height: 45px;
+  height: 46px;
 }
 
 .appinfo {
@@ -632,7 +632,15 @@ body {
     display: block;
   }
   .app-links img {
-    height: auto;
     padding: 12px 24px 12px;
+  }
+  .app-itune-link img {
+    height: 46px;
+    width: auto;
+  }
+  
+  .app-android-link img {
+    height: 46px;
+    width: auto;
   }
 }
