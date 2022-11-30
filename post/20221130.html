@@ -4,18 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="../style.css" />
     <link
-      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    /> -->
+    />
 
     <meta name="description" content="swg-web" />
-    <title>SWG-WEB</title>
+    <title>20221130</title>
     <!-- jqueryのCDN -->
     <script
       src="https://code.jquery.com/jquery-3.6.0.js"
@@ -35,11 +32,11 @@
     <!-- scrollTop リンクのズレ補正 -->
     <script>
       $(function () {
-        var headerHight = 70
+        var headerHight = 70 //ヘッダーの高さ
         $('a[href^=#]').click(function () {
           var href = $(this).attr('href')
           var target = $(href == '#' || href == '' ? 'html' : href)
-          var posi = target.offset().top - headerHight
+          var posi = target.offset().top - headerHight //ヘッダーの高さ分位置をずらす
           $('html, body').animate({ scrollTop: posi }, 500, 'swing')
           return false
         })
@@ -52,17 +49,17 @@
       <div class="header pc_only">
         <nav class="flex-col">
           <div class="h_left">
-            <h1><a href="index.html">SunnyWardGames</a></h1>
+            <h1><a href="../index.html">SunnyWardGames</a></h1>
           </div>
           <ul class="pc_header flex-col">
             <li class="pagelink left-border">
-              <a href="index.html">ホーム</a>
+              <a href="../index.html">ホーム</a>
             </li>
             <li class="pagelink left-border">
-              <a href="works.html">公開中のゲーム</a>
+              <a href="../works.html">公開中のゲーム</a>
             </li>
             <li class="pagelink left-border">
-              <a href="privacypolicy/index.html">プライバシーポリシー</a>
+              <a href="../privacypolicy/index.html">プライバシーポリシー</a>
             </li>
           </ul>
         </nav>
@@ -71,10 +68,10 @@
         <nav class="page-nav">
           <ul>
             <li class="close"><span></span></li>
-            <li class="pagelink"><a href="index.html">ホーム</a></li>
-            <li class="pagelink"><a href="works.html">公開中のゲーム</a></li>
+            <li class="pagelink"><a href="../index.html">ホーム</a></li>
+            <li class="pagelink"><a href="../works.html">公開中のゲーム</a></li>
             <li class="pagelink">
-              <a href="privacypolicy/index.html">プライバシーポリシー</a>
+              <a href="../privacypolicy/index.html">プライバシーポリシー</a>
             </li>
           </ul>
         </nav>
@@ -83,7 +80,7 @@
             <span></span>
           </div>
           <div class="h_center">
-            <h1><a href="index.html">SunnyWardGames</a></h1>
+            <h1><a href="../index.html">SunnyWardGames</a></h1>
           </div>
         </div>
       </div>
@@ -91,122 +88,46 @@
     <!-- End header Section -->
 
     <div class="height70px"></div>
-    <!-- Hero Section -->
-    <section id="heroslider">
-      <div class="swiper heroslider hero">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <a href="works.html#obake">
-              <img src="img/banner_obake.jpg" alt="おばけのなぞとき" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="works.html#ncrypt">
-              <img src="img/banner_ncrypt.jpg" alt="" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="works.html#scratch">
-              <img src="img/banner_scratch.png" alt="" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="works.html#pocket">
-              <img src="img/banner_pocket.jpg" alt="" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="works.html#monsterworks">
-              <img src="img/banner_mw.jpg" alt="" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="works.html#glowhunter">
-              <img src="img/banner_gh.png" alt="" />
-            </a>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </section>
-
-    <!-- End Hero Section -->
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="about container">
-        <div class="mtb30">
-          <h2>Unityでゲームを制作している個人開発者です</h2>
-        </div>
-        <p class="underlinelink">
-          公開中のゲームなどは
-          <a href="works.html">こちら</a>
-        </p>
-      </div>
-    </section>
-    <!-- End About Section -->
 
     <!-- Post Section -->
-    <section class="contents mtb30" id="post_top">
-      <!-- <div class="post_top container">
-        <a href="post/20221009.html">
-          <p class="post_date">2022.10.09</p>
-          <p class="post_ttl">
-            新作RPGをリリース予定
-          </p>
-          <p class="post_cont">
-            自動戦闘ハクスラRPG「FuzzyGrave」の事前予約を開始しました。
+    <section class="contents mtb30 postpage">
+      <div class="container">
+        <p class="post_date">2022.11.30</p>
+        <p class="post_ttl">新作ゲームをリリースしました</p>
+        <p class="post_cont">
+            自動戦闘ハクスラRPG「FuzzyGrave」をリリースいたしました。
             <br />
-            Android, iOSともに秋頃の公開を予定しています。
-          </p>
-        </a>
-      </div>
-      <div class="post_border container"></div> -->
-      <div class="post_top container">
-        <a href="post/20221130.html">
-          <div class="post_flex">
-            <div class="post_img"><img src="img/icon_fuzzy.png" alt="" /></div>
-            <div class="post_text">
-              <p class="post_date">
-                2022.11.30
-              </p>
-              <p class="post_ttl">
-                新作ゲームをリリースしました
-              </p>
-              <p class="post_cont">
-                自動戦闘ハクスラRPG「FuzzyGrave」をリリースいたしました。
-                <br />
-                Android, iOSともに公開中です。
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div class="post_top container">
-        <a href="post/20221009.html">
-          <div class="post_flex">
-            <div class="post_img"><img src="img/icon_fuzzy.png" alt="" /></div>
-            <div class="post_text">
-              <p class="post_date">
-                <!-- <span class="material-symbols-outlined">
-                calendar_month
-              </span> -->
-
-                2022.10.9
-              </p>
-              <p class="post_ttl">
-                新作RPGをリリース予定
-              </p>
-              <p class="post_cont">
-                自動戦闘ハクスラRPG「FuzzyGrave」の事前予約を開始しました。
-                <br />
-                Android, iOSともに秋頃の公開を予定しています。
-              </p>
-            </div>
-          </div>
-        </a>
+            Android, iOSとも公開中です。
+            <br>
+            <br>
+            <div class="app-links">
+                <div class="app-itune-link">
+                  <a
+                    class="ios_link"
+                    href="https://apps.apple.com/jp/app/fuzzygrave/id6444372880"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      src="../img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"
+                    />
+                  </a>
+                </div>
+                <div class="app-android-link">
+                  <a
+                    class="android_link"
+                    href="https://play.google.com/store/apps/details?id=com.sunnywardgames.fuzzygrave"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img
+                      alt="Google Play で手に入れよう"
+                      src="../img/google-play-badge.png"
+                    />
+                  </a>
+                </div>
+              </div>
+        </p>
       </div>
     </section>
 
@@ -216,12 +137,12 @@
         <div class="sns">
           <ul>
             <li>
-              <a href="works.html">
+              <a href="../works.html">
                 公開中のゲーム
               </a>
             </li>
             <li>
-              <a href="privacypolicy/index.html">
+              <a href="../privacypolicy/index.html">
                 プライバシーポリシー
               </a>
             </li>
@@ -237,7 +158,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="img/square-twitter.svg"
+                  src="../img/square-twitter.svg"
                   alt="twitter"
                   class="hover_c"
                 />
@@ -252,7 +173,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src="img/instagram.svg" alt="instagram" class="hover_c" />
+                <img src="../img/instagram.svg" alt="instagram" class="hover_c" />
                 instagram
               </a>
             </li>
@@ -264,7 +185,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="img/google-play.svg"
+                  src="../img/google-play.svg"
                   alt="googleplay"
                   class="hover_c"
                 />
@@ -279,7 +200,7 @@
                 rel="noopener noreferrer"
               >
                 <img
-                  src="img/app-store-ios.svg"
+                  src="../img/app-store-ios.svg"
                   alt="appstore"
                   class="hover_c"
                 />
@@ -297,9 +218,8 @@
 
     <!-- scroll Top -->
     <div id="pagetop">
-      <a href="#top"><i class="fas fa-angle-up"></i></a>
+      <a href="#top"><img src="../img/chevron-up-solid.svg" alt="" /></a>
     </div>
-
     <!-- Script -->
     <script src="./app.js"></script>
     <script type="text/javascript"></script>
@@ -312,6 +232,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
       let mySwiper = new Swiper('.heroslider', {
+        // オプションの設定
         loop: true,
 
         pagination: {
@@ -331,7 +252,7 @@
         speed: 2000,
       })
     </script>
-
+   
     <script src="modal.js"></script>
   </body>
 </html>
