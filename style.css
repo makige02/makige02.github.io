@@ -631,16 +631,20 @@ body {
     clear: both;
     display: block;
   }
-  .app-links img {
+  /* .app-links img {
     padding: 12px 24px 12px;
-  }
+  } */
   .app-itune-link img {
+    display: initial;
     height: 46px;
     width: auto;
   }
   
   .app-android-link img {
+    display: initial;
     height: 46px;
     width: auto;
   }
+
+  
 }
