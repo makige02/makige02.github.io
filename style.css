@@ -564,9 +564,10 @@ body {
 }
 /* .app-links img { */
 .app-itune-link img {
-  display: block;
   max-width: 100%;
   height: 46px;
+  background-size: contain;
+
 }
 
 .appinfo {
@@ -576,9 +577,9 @@ body {
   clear: left;
 }
 .app-android-link img {
-    display: block;
-  max-width: 150px;
   margin: auto;
+  height: 46px;
+  background-size: contain;
 }
 
 /* End Works */
@@ -631,20 +632,6 @@ body {
     clear: both;
     display: block;
   }
-  /* .app-links img {
-    padding: 12px 24px 12px;
-  } */
-  .app-itune-link img {
-    display: initial;
-    height: 46px;
-    width: auto;
-  }
   
-  .app-android-link img {
-    display: initial;
-    height: 46px;
-    width: auto;
-  }
-
   
 }
