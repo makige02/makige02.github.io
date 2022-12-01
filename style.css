@@ -447,11 +447,11 @@ body {
   transition: all 0.5s;
 }
 .post_flex .post_img {
-  width: auto;
+  height: auto;
 }
 .post_flex .post_img img {
   height: auto;
-  max-width: 200px;
+  max-width: 150px;
 }
 .post_date::before {
   content: '';
