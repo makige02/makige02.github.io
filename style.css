@@ -611,6 +611,9 @@ body {
   #post_top {
     padding: 0;
   }
+  #works p{
+    font-size: 15px;
+  }
   .appicon_image {
     float: none;
   }
@@ -623,11 +626,4 @@ body {
   .footer {
     padding-bottom: 70px;
   }
-}
-
-@media only screen and (max-width: 360px) {
-    #works p{
-        font-size: 15px;
-    }
-  
 }
