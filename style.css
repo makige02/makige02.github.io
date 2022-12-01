@@ -530,6 +530,9 @@ body {
 #works {
   margin: 40px 0;
 }
+#works p{
+    font-size: 17px;
+}
 .appbox {
   padding: 15px;
   border-bottom: 1px solid rgb(194, 206, 194);
