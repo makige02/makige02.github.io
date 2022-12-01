@@ -564,9 +564,7 @@ body {
 }
 /* .app-links img { */
 .app-itune-link img {
-  max-width: 100%;
-  height: 46px;
-
+  width: 137px;
 }
 
 .appinfo {
@@ -576,7 +574,6 @@ body {
   clear: left;
 }
 .app-android-link img {
-  margin: auto;
   width: 150px;
 }
 
@@ -630,6 +627,10 @@ body {
     clear: both;
     display: block;
   }
-  
+  /* .app-itune-link,
+  .app-android-link {
+      max-width: 153px;
+  }
+   */
   
 }
