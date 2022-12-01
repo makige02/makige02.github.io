@@ -566,7 +566,6 @@ body {
 .app-itune-link img {
   max-width: 100%;
   height: 46px;
-  background-size: contain;
 
 }
 
@@ -578,7 +577,7 @@ body {
 }
 .app-android-link img {
   margin: auto;
-  height: 46px;
+  width: 150px;
 }
 
 /* End Works */
