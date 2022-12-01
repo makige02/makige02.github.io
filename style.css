@@ -626,14 +626,8 @@ body {
 }
 
 @media only screen and (max-width: 360px) {
-  /* .app-links {
-    clear: both;
-    display: block;
-  } */
-  /* .app-itune-link,
-  .app-android-link {
-      max-width: 153px;
-  }
-   */
+    #works p{
+        font-size: 15px;
+    }
   
 }
